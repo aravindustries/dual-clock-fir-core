@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : fir_core
+Version: U-2022.12-SP7
+Date   : Wed Dec 17 20:36:41 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+valid_out (out)                     1.87 r          999.95       998.08
+dout[14] (out)                      0.83 f          999.95       999.12
+dout[13] (out)                      0.83 f          999.95       999.12
+dout[12] (out)                      0.83 f          999.95       999.12
+dout[11] (out)                      0.83 f          999.95       999.12
+dout[10] (out)                      0.83 f          999.95       999.12
+dout[9] (out)                       0.83 f          999.95       999.12
+dout[8] (out)                       0.83 f          999.95       999.12
+dout[7] (out)                       0.83 f          999.95       999.12
+dout[6] (out)                       0.83 f          999.95       999.12
+dout[5] (out)                       0.83 f          999.95       999.12
+dout[4] (out)                       0.83 f          999.95       999.12
+dout[3] (out)                       0.83 f          999.95       999.12
+dout[2] (out)                       0.83 f          999.95       999.12
+dout[1] (out)                       0.83 f          999.95       999.12
+dout[0] (out)                       0.83 f          999.95       999.12
+dout[15] (out)                      0.82 f          999.95       999.13
+
+1

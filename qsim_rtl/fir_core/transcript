@@ -1,0 +1,647 @@
+# do runsim.do
+# Model Technology ModelSim DE vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap work work 
+# Copying /tools/mentor/ModelSim/2024.2/modelsim_dlx/linuxpe/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:49:46 on Dec 17,2025
+# vlog -reportprogress 300 -sv "+acc" -suppress 12110 -incr ../../rtl/fir_core/fir_core.v 
+# -- Compiling module alu
+# -- Compiling module counter
+# -- Compiling module cmem
+# -- Compiling module imem
+# -- Compiling module fifo
+# -- Compiling module fir_fsm
+# -- Compiling module fir_core
+# 
+# Top level modules:
+# 	fir_core
+# End time: 22:49:48 on Dec 17,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:49:49 on Dec 17,2025
+# vlog -reportprogress 300 -sv "+acc" -suppress 12110 -incr test_fir_core.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:49:51 on Dec 17,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# ** Warning: (vsim-8690) Ignoring plusarg '+acc' with -novopt in effect.
+# vsim "+acc" -suppress 12110 -t ps -lib work testbench 
+# Start time: 22:49:51 on Dec 17,2025
+# //  ModelSim DE 2024.2 May 20 2024 Linux 4.18.0-553.89.1.el8_10.x86_64
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.fir_core
+# Loading work.fifo
+# Loading work.cmem
+# Loading work.imem
+# Loading work.counter
+# Loading work.alu
+# Loading work.fir_fsm
+#                    0: Loaded vectors: X=../../matlab/x_q15_in_hex.txt, C=../../matlab/cmem_in_hex.txt, YQ=../../matlab/y_q79_out.txt, YF32_HEX=../../matlab/y_f32_gold_unquant_hex.txt
+#            201500000: CMEM load: caddr=0, cin=21 (0x15)
+#            202500000: CMEM load: caddr=1, cin=9 (0x9)
+#            203500000: CMEM load: caddr=2, cin=-10 (0xfff6)
+#            204500000: CMEM load: caddr=3, cin=-30 (0xffe2)
+#            205500000: CMEM load: caddr=4, cin=-44 (0xffd4)
+#            206500000: CMEM load: caddr=5, cin=-43 (0xffd5)
+#            207500000: CMEM load: caddr=6, cin=-20 (0xffec)
+#            208500000: CMEM load: caddr=7, cin=25 (0x19)
+#            209500000: CMEM load: caddr=8, cin=79 (0x4f)
+#            210500000: CMEM load: caddr=9, cin=117 (0x75)
+#            211500000: CMEM load: caddr=10, cin=114 (0x72)
+#            212500000: CMEM load: caddr=11, cin=52 (0x34)
+#            213500000: CMEM load: caddr=12, cin=-62 (0xffc2)
+#            214500000: CMEM load: caddr=13, cin=-190 (0xff42)
+#            215500000: CMEM load: caddr=14, cin=-274 (0xfeee)
+#            216500000: CMEM load: caddr=15, cin=-259 (0xfefd)
+#            217500000: CMEM load: caddr=16, cin=-115 (0xff8d)
+#            218500000: CMEM load: caddr=17, cin=133 (0x85)
+#            219500000: CMEM load: caddr=18, cin=402 (0x192)
+#            220500000: CMEM load: caddr=19, cin=573 (0x23d)
+#            221500000: CMEM load: caddr=20, cin=535 (0x217)
+#            222500000: CMEM load: caddr=21, cin=237 (0xed)
+#            223500000: CMEM load: caddr=22, cin=-274 (0xfeee)
+#            224500000: CMEM load: caddr=23, cin=-839 (0xfcb9)
+#            225500000: CMEM load: caddr=24, cin=-1221 (0xfb3b)
+#            226500000: CMEM load: caddr=25, cin=-1178 (0xfb66)
+#            227500000: CMEM load: caddr=26, cin=-547 (0xfddd)
+#            228500000: CMEM load: caddr=27, cin=684 (0x2ac)
+#            229500000: CMEM load: caddr=28, cin=2346 (0x92a)
+#            230500000: CMEM load: caddr=29, cin=4115 (0x1013)
+#            231500000: CMEM load: caddr=30, cin=5600 (0x15e0)
+#            232500000: CMEM load: caddr=31, cin=6447 (0x192f)
+#            233500000: CMEM load: caddr=32, cin=6447 (0x192f)
+#            234500000: CMEM load: caddr=33, cin=5600 (0x15e0)
+#            235500000: CMEM load: caddr=34, cin=4115 (0x1013)
+#            236500000: CMEM load: caddr=35, cin=2346 (0x92a)
+#            237500000: CMEM load: caddr=36, cin=684 (0x2ac)
+#            238500000: CMEM load: caddr=37, cin=-547 (0xfddd)
+#            239500000: CMEM load: caddr=38, cin=-1178 (0xfb66)
+#            240500000: CMEM load: caddr=39, cin=-1221 (0xfb3b)
+#            241500000: CMEM load: caddr=40, cin=-839 (0xfcb9)
+#            242500000: CMEM load: caddr=41, cin=-274 (0xfeee)
+#            243500000: CMEM load: caddr=42, cin=237 (0xed)
+#            244500000: CMEM load: caddr=43, cin=535 (0x217)
+#            245500000: CMEM load: caddr=44, cin=573 (0x23d)
+#            246500000: CMEM load: caddr=45, cin=402 (0x192)
+#            247500000: CMEM load: caddr=46, cin=133 (0x85)
+#            248500000: CMEM load: caddr=47, cin=-115 (0xff8d)
+#            249500000: CMEM load: caddr=48, cin=-259 (0xfefd)
+#            250500000: CMEM load: caddr=49, cin=-274 (0xfeee)
+#            251500000: CMEM load: caddr=50, cin=-190 (0xff42)
+#            252500000: CMEM load: caddr=51, cin=-62 (0xffc2)
+#            253500000: CMEM load: caddr=52, cin=52 (0x34)
+#            254500000: CMEM load: caddr=53, cin=114 (0x72)
+#            255500000: CMEM load: caddr=54, cin=117 (0x75)
+#            256500000: CMEM load: caddr=55, cin=79 (0x4f)
+#            257500000: CMEM load: caddr=56, cin=25 (0x19)
+#            258500000: CMEM load: caddr=57, cin=-20 (0xffec)
+#            259500000: CMEM load: caddr=58, cin=-43 (0xffd5)
+#            260500000: CMEM load: caddr=59, cin=-44 (0xffd4)
+#            261500000: CMEM load: caddr=60, cin=-30 (0xffe2)
+#            262500000: CMEM load: caddr=61, cin=-10 (0xfff6)
+#            263500000: CMEM load: caddr=62, cin=9 (0x9)
+#            264500000: CMEM load: caddr=63, cin=21 (0x15)
+#            265000000: Finished CMEM load
+#            800000000: IN[0] = 0 (0x0)
+#            900000000: IN[1] = 26509 (0x678d)
+#           1000000000: IN[2] = 19260 (0x4b3c)
+#           1019501000: OUT_EVT[1] DUT_Q79=0 (0x0) EXP_Q79[0]=0 (0x0)          [OK]  |  DUT_REAL=0  GOLD_F32HEX=0x00000000 GOLD_F32=0 diff=0  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=0}
+#           1100000000: IN[3] = 10126 (0x278e)
+#           1119501000: OUT_EVT[2] DUT_Q79=0 (0x0) EXP_Q79[1]=0 (0x0)          [OK]  |  DUT_REAL=0  GOLD_F32HEX=0x3a0acac9 GOLD_F32=0.000529449957 diff=0.000529449957  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=0}
+#           1200000000: IN[4] = 31163 (0x79bb)
+#           1219501000: OUT_EVT[3] DUT_Q79=0 (0x0) EXP_Q79[2]=0 (0x0)          [OK]  |  DUT_REAL=0  GOLD_F32HEX=0x3a1d27a5 GOLD_F32=0.00059949822 diff=0.00059949822  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=0}
+#           1300000000: IN[5] = 32767 (0x7fff)
+#           1319501000: OUT_EVT[4] DUT_Q79=0 (0x0) EXP_Q79[3]=0 (0x0)          [OK]  |  DUT_REAL=0  GOLD_F32HEX=0x38f6f26b GOLD_F32=0.00011775348 diff=0.00011775348  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=0}
+#           1400000000: IN[6] = 31163 (0x79bb)
+#           1419501000: OUT_EVT[5] DUT_Q79=0 (0x0) EXP_Q79[4]=-1 (0xffff)  **MISMATCH**  |  DUT_REAL=0  GOLD_F32HEX=0xb956f123 GOLD_F32=-0.000204984608 diff=-0.000204984608  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=0}
+#           1500000000: IN[7] = 10126 (0x278e)
+#           1519501000: OUT_EVT[6] DUT_Q79=-1 (0xffff) EXP_Q79[5]=-1 (0xffff)          [OK]  |  DUT_REAL=-0.001953125  GOLD_F32HEX=0xb9fb6b77 GOLD_F32=-0.000479545182 diff=0.00147357982  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-1}
+#           1600000000: IN[8] = 19260 (0x4b3c)
+#           1619501000: OUT_EVT[7] DUT_Q79=-1 (0xffff) EXP_Q79[6]=-1 (0xffff)          [OK]  |  DUT_REAL=-0.001953125  GOLD_F32HEX=0xbab7ede7 GOLD_F32=-0.00140326924 diff=0.000549855758  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-1}
+#           1700000000: IN[9] = 26509 (0x678d)
+#           1719501000: OUT_EVT[8] DUT_Q79=-2 (0xfffe) EXP_Q79[7]=-2 (0xfffe)          [OK]  |  DUT_REAL=-0.00390625  GOLD_F32HEX=0xbb26f17e GOLD_F32=-0.00254735304 diff=0.00135889696  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-2}
+#           1800000000: IN[10] = 0 (0x0)
+#           1819501000: OUT_EVT[9] DUT_Q79=-1 (0xffff) EXP_Q79[8]=-2 (0xfffe)  **MISMATCH**  |  DUT_REAL=-0.001953125  GOLD_F32HEX=0xbb2ba591 GOLD_F32=-0.00261912146 diff=-0.000665996457  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-1}
+#           1900000000: IN[11] = -26509 (0x9873)
+#           1919501000: OUT_EVT[10] DUT_Q79=-1 (0xffff) EXP_Q79[9]=-1 (0xffff)          [OK]  |  DUT_REAL=-0.001953125  GOLD_F32HEX=0xbab1345a GOLD_F32=-0.00135196303 diff=0.00060116197  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-1}
+#           2000000000: IN[12] = -19260 (0xb4c4)
+#           2019501000: OUT_EVT[11] DUT_Q79=0 (0x0) EXP_Q79[10]=0 (0x0)          [OK]  |  DUT_REAL=0  GOLD_F32HEX=0x39ed176e GOLD_F32=0.000452216191 diff=0.000452216191  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=0}
+#           2100000000: IN[13] = -10126 (0xd872)
+#           2119501000: OUT_EVT[12] DUT_Q79=1 (0x1) EXP_Q79[11]=1 (0x1)          [OK]  |  DUT_REAL=0.001953125  GOLD_F32HEX=0x3b226471 GOLD_F32=0.0024779106 diff=0.000524785602  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=1}
+#           2200000000: IN[14] = -31163 (0x8645)
+#           2219501000: OUT_EVT[13] DUT_Q79=2 (0x2) EXP_Q79[12]=2 (0x2)          [OK]  |  DUT_REAL=0.00390625  GOLD_F32HEX=0x3b9aed3b GOLD_F32=0.00472798711 diff=0.000821737107  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=2}
+#           2300000000: IN[15] = -32768 (0x8000)
+#           2319501000: OUT_EVT[14] DUT_Q79=2 (0x2) EXP_Q79[13]=2 (0x2)          [OK]  |  DUT_REAL=0.00390625  GOLD_F32HEX=0x3bc5e464 GOLD_F32=0.00603918917 diff=0.00213293917  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=2}
+#           2400000000: IN[16] = -31163 (0x8645)
+#           2419501000: OUT_EVT[15] DUT_Q79=1 (0x1) EXP_Q79[14]=1 (0x1)          [OK]  |  DUT_REAL=0.001953125  GOLD_F32HEX=0x3b995272 GOLD_F32=0.0046790177 diff=0.0027258927  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=1}
+#           2500000000: IN[17] = -10126 (0xd872)
+#           2519501000: OUT_EVT[16] DUT_Q79=-1 (0xffff) EXP_Q79[15]=-1 (0xffff)          [OK]  |  DUT_REAL=-0.001953125  GOLD_F32HEX=0x3a0f1a2e GOLD_F32=0.000545891817 diff=0.00249901682  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-1}
+#           2600000000: IN[18] = -19260 (0xb4c4)
+#           2619501000: OUT_EVT[17] DUT_Q79=-3 (0xfffd) EXP_Q79[16]=-3 (0xfffd)          [OK]  |  DUT_REAL=-0.005859375  GOLD_F32HEX=0xbb98deed GOLD_F32=-0.0046652467 diff=0.0011941283  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-3}
+#           2700000000: IN[19] = -26509 (0x9873)
+#           2719501000: OUT_EVT[18] DUT_Q79=-5 (0xfffb) EXP_Q79[17]=-5 (0xfffb)          [OK]  |  DUT_REAL=-0.009765625  GOLD_F32HEX=0xbc16c89a GOLD_F32=-0.00920310058 diff=0.000562524423  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-5}
+#           2800000000: IN[20] = 0 (0x0)
+#           2819501000: OUT_EVT[19] DUT_Q79=-5 (0xfffb) EXP_Q79[18]=-5 (0xfffb)          [OK]  |  DUT_REAL=-0.009765625  GOLD_F32HEX=0xbc3df3e1 GOLD_F32=-0.0115937898 diff=-0.00182816479  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-5}
+#           2900000000: IN[21] = 26509 (0x678d)
+#           2919501000: OUT_EVT[20] DUT_Q79=-4 (0xfffc) EXP_Q79[19]=-4 (0xfffc)          [OK]  |  DUT_REAL=-0.0078125  GOLD_F32HEX=0xbc2123c8 GOLD_F32=-0.00983519107 diff=-0.00202269107  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-4}
+#           3000000000: IN[22] = 19260 (0x4b3c)
+#           3019501000: OUT_EVT[21] DUT_Q79=0 (0x0) EXP_Q79[20]=0 (0x0)          [OK]  |  DUT_REAL=0  GOLD_F32HEX=0xbb29b538 GOLD_F32=-0.00258953683 diff=-0.00258953683  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=0}
+#           3100000000: IN[23] = 10126 (0x278e)
+#           3119501000: OUT_EVT[22] DUT_Q79=5 (0x5) EXP_Q79[21]=5 (0x5)          [OK]  |  DUT_REAL=0.009765625  GOLD_F32HEX=0x3c099208 GOLD_F32=0.00839663297 diff=-0.00136899203  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=5}
+#           3200000000: IN[24] = 31163 (0x79bb)
+#           3219501000: OUT_EVT[23] DUT_Q79=8 (0x8) EXP_Q79[22]=8 (0x8)          [OK]  |  DUT_REAL=0.015625  GOLD_F32HEX=0x3c977554 GOLD_F32=0.0184885636 diff=0.0028635636  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=8}
+#           3300000000: IN[25] = 32767 (0x7fff)
+#           3319501000: OUT_EVT[24] DUT_Q79=9 (0x9) EXP_Q79[23]=9 (0x9)          [OK]  |  DUT_REAL=0.017578125  GOLD_F32HEX=0x3cbb465d GOLD_F32=0.0228607003 diff=0.00528257526  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=9}
+#           3400000000: IN[26] = 31163 (0x79bb)
+#           3419501000: OUT_EVT[25] DUT_Q79=6 (0x6) EXP_Q79[24]=5 (0x5)  **MISMATCH**  |  DUT_REAL=0.01171875  GOLD_F32HEX=0x3c94cdd3 GOLD_F32=0.0181645509 diff=0.00644580089  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=6}
+#           3500000000: IN[27] = 10126 (0x278e)
+#           3519501000: OUT_EVT[26] DUT_Q79=-2 (0xfffe) EXP_Q79[25]=-2 (0xfffe)          [OK]  |  DUT_REAL=-0.00390625  GOLD_F32HEX=0x3b468a88 GOLD_F32=0.00302949734 diff=0.00693574734  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-2}
+#           3600000000: IN[28] = 19260 (0x4b3c)
+#           3619501000: OUT_EVT[27] DUT_Q79=-12 (0xfff4) EXP_Q79[26]=-12 (0xfff4)          [OK]  |  DUT_REAL=-0.0234375  GOLD_F32HEX=0xbca343e1 GOLD_F32=-0.0199298281 diff=0.00350767188  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-12}
+#           3700000000: IN[29] = 26509 (0x678d)
+#           3719501000: OUT_EVT[28] DUT_Q79=-20 (0xffec) EXP_Q79[27]=-20 (0xffec)          [OK]  |  DUT_REAL=-0.0390625  GOLD_F32HEX=0xbd2aef72 GOLD_F32=-0.0417322591 diff=-0.00266975909  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-20}
+#           3800000000: IN[30] = 0 (0x0)
+#           3819501000: OUT_EVT[29] DUT_Q79=-20 (0xffec) EXP_Q79[28]=-20 (0xffec)          [OK]  |  DUT_REAL=-0.0390625  GOLD_F32HEX=0xbd45984b GOLD_F32=-0.048240941 diff=-0.00917844102  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-20}
+#           3900000000: IN[31] = -26509 (0x9873)
+#           3919501000: OUT_EVT[30] DUT_Q79=-5 (0xfffb) EXP_Q79[29]=-5 (0xfffb)          [OK]  |  DUT_REAL=-0.009765625  GOLD_F32HEX=0xbcca29ad GOLD_F32=-0.0246780757 diff=-0.0149124507  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-5}
+#           4000000000: IN[32] = -19260 (0xb4c4)
+#           4019501000: OUT_EVT[31] DUT_Q79=28 (0x1c) EXP_Q79[30]=28 (0x1c)          [OK]  |  DUT_REAL=0.0546875  GOLD_F32HEX=0x3d25ee1f GOLD_F32=0.0405102931 diff=-0.0141772069  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=28}
+#           4100000000: IN[33] = -10126 (0xd872)
+#           4119501000: OUT_EVT[32] DUT_Q79=81 (0x51) EXP_Q79[31]=81 (0x51)          [OK]  |  DUT_REAL=0.158203125  GOLD_F32HEX=0x3e1cca02 GOLD_F32=0.153114349 diff=-0.00508877635  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=81}
+#           4200000000: IN[34] = -31163 (0x8645)
+#           4219501000: OUT_EVT[33] DUT_Q79=153 (0x99) EXP_Q79[32]=154 (0x9a)  **MISMATCH**  |  DUT_REAL=0.298828125  GOLD_F32HEX=0x3e9e97e6 GOLD_F32=0.309752643 diff=0.0109245181  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=153}
+#           4300000000: IN[35] = -32768 (0x8000)
+#           4319501000: OUT_EVT[34] DUT_Q79=237 (0xed) EXP_Q79[33]=237 (0xed)          [OK]  |  DUT_REAL=0.462890625  GOLD_F32HEX=0x3efd720b GOLD_F32=0.495010704 diff=0.0321200788  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=237}
+#           4400000000: IN[36] = -31163 (0x8645)
+#           4419501000: OUT_EVT[35] DUT_Q79=320 (0x140) EXP_Q79[34]=321 (0x141)  **MISMATCH**  |  DUT_REAL=0.625  GOLD_F32HEX=0x3f2ee080 GOLD_F32=0.683113098 diff=0.0581130981  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=320}
+#           4500000000: IN[37] = -10126 (0xd872)
+#           4519501000: OUT_EVT[36] DUT_Q79=391 (0x187) EXP_Q79[35]=391 (0x187)          [OK]  |  DUT_REAL=0.763671875  GOLD_F32HEX=0x3f57f8bc GOLD_F32=0.843639135 diff=0.0799672604  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=391}
+#           4600000000: IN[38] = -19260 (0xb4c4)
+#           4619501000: OUT_EVT[37] DUT_Q79=435 (0x1b3) EXP_Q79[36]=435 (0x1b3)          [OK]  |  DUT_REAL=0.849609375  GOLD_F32HEX=0x3f726f92 GOLD_F32=0.947014928 diff=0.0974055529  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=435}
+#           4700000000: IN[39] = -26509 (0x9873)
+#           4719501000: OUT_EVT[38] DUT_Q79=443 (0x1bb) EXP_Q79[37]=443 (0x1bb)          [OK]  |  DUT_REAL=0.865234375  GOLD_F32HEX=0x3f78046a GOLD_F32=0.968817353 diff=0.103582978  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=443}
+#           4800000000: IN[40] = 0 (0x0)
+#           4819501000: OUT_EVT[39] DUT_Q79=408 (0x198) EXP_Q79[38]=409 (0x199)  **MISMATCH**  |  DUT_REAL=0.796875  GOLD_F32HEX=0x3f6518cb GOLD_F32=0.894909561 diff=0.0980345607  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=408}
+#           4900000000: IN[41] = 26509 (0x678d)
+#           4919501000: OUT_EVT[40] DUT_Q79=331 (0x14b) EXP_Q79[39]=331 (0x14b)          [OK]  |  DUT_REAL=0.646484375  GOLD_F32HEX=0x3f39d83c GOLD_F32=0.725955725 diff=0.0794713497  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=331}
+#           5000000000: IN[42] = 19260 (0x4b3c)
+#           5019501000: OUT_EVT[41] DUT_Q79=218 (0xda) EXP_Q79[40]=218 (0xda)          [OK]  |  DUT_REAL=0.42578125  GOLD_F32HEX=0x3ef468ad GOLD_F32=0.477361113 diff=0.0515798628  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=218}
+#           5100000000: IN[43] = 10126 (0x278e)
+#           5119501000: OUT_EVT[42] DUT_Q79=80 (0x50) EXP_Q79[41]=80 (0x50)          [OK]  |  DUT_REAL=0.15625  GOLD_F32HEX=0x3e335475 GOLD_F32=0.175126866 diff=0.0188768655  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=80}
+#           5200000000: IN[44] = 31163 (0x79bb)
+#           5219501000: OUT_EVT[43] DUT_Q79=-68 (0xffbc) EXP_Q79[42]=-68 (0xffbc)          [OK]  |  DUT_REAL=-0.1328125  GOLD_F32HEX=0xbe17ccaa GOLD_F32=-0.148241669 diff=-0.0154291689  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-68}
+#           5300000000: IN[45] = 32767 (0x7fff)
+#           5319501000: OUT_EVT[44] DUT_Q79=-209 (0xff2f) EXP_Q79[43]=-210 (0xff2e)  **MISMATCH**  |  DUT_REAL=-0.408203125  GOLD_F32HEX=0xbeea07b1 GOLD_F32=-0.457089931 diff=-0.0488868058  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-209}
+#           5400000000: IN[46] = 31163 (0x79bb)
+#           5419501000: OUT_EVT[45] DUT_Q79=-329 (0xfeb7) EXP_Q79[44]=-330 (0xfeb6)  **MISMATCH**  |  DUT_REAL=-0.642578125  GOLD_F32HEX=0xbf37b65d GOLD_F32=-0.717626393 diff=-0.0750482678  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-329}
+#           5500000000: IN[47] = 10126 (0x278e)
+#           5519501000: OUT_EVT[46] DUT_Q79=-416 (0xfe60) EXP_Q79[45]=-416 (0xfe60)          [OK]  |  DUT_REAL=-0.8125  GOLD_F32HEX=0xbf674a10 GOLD_F32=-0.903473854 diff=-0.0909738541  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-416}
+#           5600000000: IN[48] = 19260 (0x4b3c)
+#           5619501000: OUT_EVT[47] DUT_Q79=-460 (0xfe34) EXP_Q79[46]=-460 (0xfe34)          [OK]  |  DUT_REAL=-0.8984375  GOLD_F32HEX=0xbf7f79ac GOLD_F32=-0.997950315 diff=-0.0995128155  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-460}
+#           5700000000: IN[49] = 26509 (0x678d)
+#           5719501000: OUT_EVT[48] DUT_Q79=-459 (0xfe35) EXP_Q79[47]=-459 (0xfe35)          [OK]  |  DUT_REAL=-0.896484375  GOLD_F32HEX=0xbf7e5047 GOLD_F32=-0.993412435 diff=-0.0969280601  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-459}
+#           5800000000: IN[50] = 0 (0x0)
+#           5819501000: OUT_EVT[49] DUT_Q79=-412 (0xfe64) EXP_Q79[48]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf642e7a GOLD_F32=-0.891334176 diff=-0.0866466761  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#           5900000000: IN[51] = -26509 (0x9873)
+#           5919501000: OUT_EVT[50] DUT_Q79=-325 (0xfebb) EXP_Q79[49]=-325 (0xfebb)          [OK]  |  DUT_REAL=-0.634765625  GOLD_F32HEX=0xbf33ff29 GOLD_F32=-0.703112185 diff=-0.06834656  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-325}
+#           6000000000: IN[52] = -19260 (0xb4c4)
+#           6019501000: OUT_EVT[51] DUT_Q79=-208 (0xff30) EXP_Q79[50]=-207 (0xff31)  **MISMATCH**  |  DUT_REAL=-0.40625  GOLD_F32HEX=0xbee59cb5 GOLD_F32=-0.448461205 diff=-0.0422112048  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-208}
+#           6100000000: IN[53] = -10126 (0xd872)
+#           6119501000: OUT_EVT[52] DUT_Q79=-71 (0xffb9) EXP_Q79[51]=-70 (0xffba)  **MISMATCH**  |  DUT_REAL=-0.138671875  GOLD_F32HEX=0xbe1b8e61 GOLD_F32=-0.15191032 diff=-0.0132384449  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-71}
+#           6200000000: IN[54] = -31163 (0x8645)
+#           6219501000: OUT_EVT[53] DUT_Q79=73 (0x49) EXP_Q79[52]=73 (0x49)          [OK]  |  DUT_REAL=0.142578125  GOLD_F32HEX=0x3e22ef5c GOLD_F32=0.159116209 diff=0.0165380836  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=73}
+#           6300000000: IN[55] = -32768 (0x8000)
+#           6319501000: OUT_EVT[54] DUT_Q79=209 (0xd1) EXP_Q79[53]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8ef8d GOLD_F32=0.454952627 diff=0.0467495024  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#           6400000000: IN[56] = -31163 (0x8645)
+#           6419501000: OUT_EVT[55] DUT_Q79=325 (0x145) EXP_Q79[54]=325 (0x145)          [OK]  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f34d933 GOLD_F32=0.706439197 diff=0.0716735721  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#           6500000000: IN[57] = -10126 (0xd872)
+#           6519501000: OUT_EVT[56] DUT_Q79=409 (0x199) EXP_Q79[55]=409 (0x199)          [OK]  |  DUT_REAL=0.798828125  GOLD_F32HEX=0x3f63a69b GOLD_F32=0.889260948 diff=0.0904328227  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=409}
+#           6600000000: IN[58] = -19260 (0xb4c4)
+#           6619501000: OUT_EVT[57] DUT_Q79=454 (0x1c6) EXP_Q79[56]=454 (0x1c6)          [OK]  |  DUT_REAL=0.88671875  GOLD_F32HEX=0x3f7c7798 GOLD_F32=0.986199856 diff=0.0994811058  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=454}
+#           6700000000: IN[59] = -26509 (0x9873)
+#           6719501000: OUT_EVT[58] DUT_Q79=454 (0x1c6) EXP_Q79[57]=454 (0x1c6)          [OK]  |  DUT_REAL=0.88671875  GOLD_F32HEX=0x3f7cc292 GOLD_F32=0.987343907 diff=0.100625157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=454}
+#           6800000000: IN[60] = 0 (0x0)
+#           6819501000: OUT_EVT[59] DUT_Q79=410 (0x19a) EXP_Q79[58]=410 (0x19a)          [OK]  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f6432d3 GOLD_F32=0.891400516 diff=0.090619266  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#           6900000000: IN[61] = 26509 (0x678d)
+#           6919501000: OUT_EVT[60] DUT_Q79=325 (0x145) EXP_Q79[59]=325 (0x145)          [OK]  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f35245e GOLD_F32=0.707586169 diff=0.0728205442  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#           7000000000: IN[62] = 19260 (0x4b3c)
+#           7019501000: OUT_EVT[61] DUT_Q79=209 (0xd1) EXP_Q79[60]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8c3b6 GOLD_F32=0.454618156 diff=0.046415031  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#           7100000000: IN[63] = 10126 (0x278e)
+#           7119501000: OUT_EVT[62] DUT_Q79=72 (0x48) EXP_Q79[61]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2102f2 GOLD_F32=0.157237798 diff=0.016612798  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#           7200000000: IN[64] = 31163 (0x79bb)
+#           7219501000: OUT_EVT[63] DUT_Q79=-72 (0xffb8) EXP_Q79[62]=-72 (0xffb8)          [OK]  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe1fdb00 GOLD_F32=-0.156108856 diff=-0.0154838562  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#           7300000000: IN[65] = 32767 (0x7fff)
+#           7319501000: OUT_EVT[64] DUT_Q79=-210 (0xff2e) EXP_Q79[63]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#           7400000000: IN[66] = 31163 (0x79bb)
+#           7419501000: OUT_EVT[65] DUT_Q79=-326 (0xfeba) EXP_Q79[64]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#           7500000000: IN[67] = 10126 (0x278e)
+#           7519501000: OUT_EVT[66] DUT_Q79=-411 (0xfe65) EXP_Q79[65]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#           7600000000: IN[68] = 19260 (0x4b3c)
+#           7619501000: OUT_EVT[67] DUT_Q79=-456 (0xfe38) EXP_Q79[66]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#           7700000000: IN[69] = 26509 (0x678d)
+#           7719501000: OUT_EVT[68] DUT_Q79=-456 (0xfe38) EXP_Q79[67]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#           7800000000: IN[70] = 0 (0x0)
+#           7819501000: OUT_EVT[69] DUT_Q79=-412 (0xfe64) EXP_Q79[68]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#           7900000000: IN[71] = -26509 (0x9873)
+#           7919501000: OUT_EVT[70] DUT_Q79=-327 (0xfeb9) EXP_Q79[69]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#           8000000000: IN[72] = -19260 (0xb4c4)
+#           8019501000: OUT_EVT[71] DUT_Q79=-210 (0xff2e) EXP_Q79[70]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#           8100000000: IN[73] = -10126 (0xd872)
+#           8119501000: OUT_EVT[72] DUT_Q79=-73 (0xffb7) EXP_Q79[71]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#           8200000000: IN[74] = -31163 (0x8645)
+#           8219501000: OUT_EVT[73] DUT_Q79=71 (0x47) EXP_Q79[72]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#           8300000000: IN[75] = -32768 (0x8000)
+#           8319501000: OUT_EVT[74] DUT_Q79=209 (0xd1) EXP_Q79[73]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#           8400000000: IN[76] = -31163 (0x8645)
+#           8419501000: OUT_EVT[75] DUT_Q79=325 (0x145) EXP_Q79[74]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#           8500000000: IN[77] = -10126 (0xd872)
+#           8519501000: OUT_EVT[76] DUT_Q79=410 (0x19a) EXP_Q79[75]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#           8600000000: IN[78] = -19260 (0xb4c4)
+#           8619501000: OUT_EVT[77] DUT_Q79=455 (0x1c7) EXP_Q79[76]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#           8700000000: IN[79] = -26509 (0x9873)
+#           8719501000: OUT_EVT[78] DUT_Q79=455 (0x1c7) EXP_Q79[77]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#           8800000000: IN[80] = 0 (0x0)
+#           8819501000: OUT_EVT[79] DUT_Q79=411 (0x19b) EXP_Q79[78]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#           8900000000: IN[81] = 26509 (0x678d)
+#           8919501000: OUT_EVT[80] DUT_Q79=326 (0x146) EXP_Q79[79]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#           9000000000: IN[82] = 19260 (0x4b3c)
+#           9019501000: OUT_EVT[81] DUT_Q79=209 (0xd1) EXP_Q79[80]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#           9100000000: IN[83] = 10126 (0x278e)
+#           9119501000: OUT_EVT[82] DUT_Q79=72 (0x48) EXP_Q79[81]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#           9200000000: IN[84] = 31163 (0x79bb)
+#           9219501000: OUT_EVT[83] DUT_Q79=-72 (0xffb8) EXP_Q79[82]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#           9300000000: IN[85] = 32767 (0x7fff)
+#           9319501000: OUT_EVT[84] DUT_Q79=-210 (0xff2e) EXP_Q79[83]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#           9400000000: IN[86] = 31163 (0x79bb)
+#           9419501000: OUT_EVT[85] DUT_Q79=-326 (0xfeba) EXP_Q79[84]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#           9500000000: IN[87] = 10126 (0x278e)
+#           9519501000: OUT_EVT[86] DUT_Q79=-411 (0xfe65) EXP_Q79[85]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#           9600000000: IN[88] = 19260 (0x4b3c)
+#           9619501000: OUT_EVT[87] DUT_Q79=-456 (0xfe38) EXP_Q79[86]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#           9700000000: IN[89] = 26509 (0x678d)
+#           9719501000: OUT_EVT[88] DUT_Q79=-456 (0xfe38) EXP_Q79[87]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#           9800000000: IN[90] = 0 (0x0)
+#           9819501000: OUT_EVT[89] DUT_Q79=-412 (0xfe64) EXP_Q79[88]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#           9900000000: IN[91] = -26509 (0x9873)
+#           9919501000: OUT_EVT[90] DUT_Q79=-327 (0xfeb9) EXP_Q79[89]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          10000000000: IN[92] = -19260 (0xb4c4)
+#          10019501000: OUT_EVT[91] DUT_Q79=-210 (0xff2e) EXP_Q79[90]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          10100000000: IN[93] = -10126 (0xd872)
+#          10119501000: OUT_EVT[92] DUT_Q79=-73 (0xffb7) EXP_Q79[91]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          10200000000: IN[94] = -31163 (0x8645)
+#          10219501000: OUT_EVT[93] DUT_Q79=71 (0x47) EXP_Q79[92]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          10300000000: IN[95] = -32768 (0x8000)
+#          10319501000: OUT_EVT[94] DUT_Q79=209 (0xd1) EXP_Q79[93]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          10400000000: IN[96] = -31163 (0x8645)
+#          10419501000: OUT_EVT[95] DUT_Q79=325 (0x145) EXP_Q79[94]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#          10500000000: IN[97] = -10126 (0xd872)
+#          10519501000: OUT_EVT[96] DUT_Q79=410 (0x19a) EXP_Q79[95]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#          10600000000: IN[98] = -19260 (0xb4c4)
+#          10619501000: OUT_EVT[97] DUT_Q79=455 (0x1c7) EXP_Q79[96]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          10700000000: IN[99] = -26509 (0x9873)
+#          10719501000: OUT_EVT[98] DUT_Q79=455 (0x1c7) EXP_Q79[97]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          10800000000: IN[100] = 0 (0x0)
+#          10819501000: OUT_EVT[99] DUT_Q79=411 (0x19b) EXP_Q79[98]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#          10900000000: IN[101] = 26509 (0x678d)
+#          10919501000: OUT_EVT[100] DUT_Q79=326 (0x146) EXP_Q79[99]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#          11000000000: IN[102] = 19260 (0x4b3c)
+#          11019501000: OUT_EVT[101] DUT_Q79=209 (0xd1) EXP_Q79[100]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          11100000000: IN[103] = 10126 (0x278e)
+#          11119501000: OUT_EVT[102] DUT_Q79=72 (0x48) EXP_Q79[101]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#          11200000000: IN[104] = 31163 (0x79bb)
+#          11219501000: OUT_EVT[103] DUT_Q79=-72 (0xffb8) EXP_Q79[102]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#          11300000000: IN[105] = 32767 (0x7fff)
+#          11319501000: OUT_EVT[104] DUT_Q79=-210 (0xff2e) EXP_Q79[103]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          11400000000: IN[106] = 31163 (0x79bb)
+#          11419501000: OUT_EVT[105] DUT_Q79=-326 (0xfeba) EXP_Q79[104]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#          11500000000: IN[107] = 10126 (0x278e)
+#          11519501000: OUT_EVT[106] DUT_Q79=-411 (0xfe65) EXP_Q79[105]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#          11600000000: IN[108] = 19260 (0x4b3c)
+#          11619501000: OUT_EVT[107] DUT_Q79=-456 (0xfe38) EXP_Q79[106]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          11700000000: IN[109] = 26509 (0x678d)
+#          11719501000: OUT_EVT[108] DUT_Q79=-456 (0xfe38) EXP_Q79[107]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          11800000000: IN[110] = 0 (0x0)
+#          11819501000: OUT_EVT[109] DUT_Q79=-412 (0xfe64) EXP_Q79[108]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#          11900000000: IN[111] = -26509 (0x9873)
+#          11919501000: OUT_EVT[110] DUT_Q79=-327 (0xfeb9) EXP_Q79[109]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          12000000000: IN[112] = -19260 (0xb4c4)
+#          12019501000: OUT_EVT[111] DUT_Q79=-210 (0xff2e) EXP_Q79[110]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          12100000000: IN[113] = -10126 (0xd872)
+#          12119501000: OUT_EVT[112] DUT_Q79=-73 (0xffb7) EXP_Q79[111]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          12200000000: IN[114] = -31163 (0x8645)
+#          12219501000: OUT_EVT[113] DUT_Q79=71 (0x47) EXP_Q79[112]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          12300000000: IN[115] = -32768 (0x8000)
+#          12319501000: OUT_EVT[114] DUT_Q79=209 (0xd1) EXP_Q79[113]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          12400000000: IN[116] = -31163 (0x8645)
+#          12419501000: OUT_EVT[115] DUT_Q79=325 (0x145) EXP_Q79[114]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#          12500000000: IN[117] = -10126 (0xd872)
+#          12519501000: OUT_EVT[116] DUT_Q79=410 (0x19a) EXP_Q79[115]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#          12600000000: IN[118] = -19260 (0xb4c4)
+#          12619501000: OUT_EVT[117] DUT_Q79=455 (0x1c7) EXP_Q79[116]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          12700000000: IN[119] = -26509 (0x9873)
+#          12719501000: OUT_EVT[118] DUT_Q79=455 (0x1c7) EXP_Q79[117]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          12800000000: IN[120] = 0 (0x0)
+#          12819501000: OUT_EVT[119] DUT_Q79=411 (0x19b) EXP_Q79[118]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#          12900000000: IN[121] = 26509 (0x678d)
+#          12919501000: OUT_EVT[120] DUT_Q79=326 (0x146) EXP_Q79[119]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#          13000000000: IN[122] = 19260 (0x4b3c)
+#          13019501000: OUT_EVT[121] DUT_Q79=209 (0xd1) EXP_Q79[120]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          13100000000: IN[123] = 10126 (0x278e)
+#          13119501000: OUT_EVT[122] DUT_Q79=72 (0x48) EXP_Q79[121]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#          13200000000: IN[124] = 31163 (0x79bb)
+#          13219501000: OUT_EVT[123] DUT_Q79=-72 (0xffb8) EXP_Q79[122]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#          13300000000: IN[125] = 32767 (0x7fff)
+#          13319501000: OUT_EVT[124] DUT_Q79=-210 (0xff2e) EXP_Q79[123]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          13400000000: IN[126] = 31163 (0x79bb)
+#          13419501000: OUT_EVT[125] DUT_Q79=-326 (0xfeba) EXP_Q79[124]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#          13500000000: IN[127] = 10126 (0x278e)
+#          13519501000: OUT_EVT[126] DUT_Q79=-411 (0xfe65) EXP_Q79[125]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#          13600000000: IN[128] = 19260 (0x4b3c)
+#          13619501000: OUT_EVT[127] DUT_Q79=-456 (0xfe38) EXP_Q79[126]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          13700000000: IN[129] = 26509 (0x678d)
+#          13719501000: OUT_EVT[128] DUT_Q79=-456 (0xfe38) EXP_Q79[127]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          13800000000: IN[130] = 0 (0x0)
+#          13819501000: OUT_EVT[129] DUT_Q79=-412 (0xfe64) EXP_Q79[128]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#          13900000000: IN[131] = -26509 (0x9873)
+#          13919501000: OUT_EVT[130] DUT_Q79=-327 (0xfeb9) EXP_Q79[129]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          14000000000: IN[132] = -19260 (0xb4c4)
+#          14019501000: OUT_EVT[131] DUT_Q79=-210 (0xff2e) EXP_Q79[130]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          14100000000: IN[133] = -10126 (0xd872)
+#          14119501000: OUT_EVT[132] DUT_Q79=-73 (0xffb7) EXP_Q79[131]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          14200000000: IN[134] = -31163 (0x8645)
+#          14219501000: OUT_EVT[133] DUT_Q79=71 (0x47) EXP_Q79[132]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          14300000000: IN[135] = -32768 (0x8000)
+#          14319501000: OUT_EVT[134] DUT_Q79=209 (0xd1) EXP_Q79[133]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          14400000000: IN[136] = -31163 (0x8645)
+#          14419501000: OUT_EVT[135] DUT_Q79=325 (0x145) EXP_Q79[134]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#          14500000000: IN[137] = -10126 (0xd872)
+#          14519501000: OUT_EVT[136] DUT_Q79=410 (0x19a) EXP_Q79[135]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#          14600000000: IN[138] = -19260 (0xb4c4)
+#          14619501000: OUT_EVT[137] DUT_Q79=455 (0x1c7) EXP_Q79[136]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          14700000000: IN[139] = -26509 (0x9873)
+#          14719501000: OUT_EVT[138] DUT_Q79=455 (0x1c7) EXP_Q79[137]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          14800000000: IN[140] = 0 (0x0)
+#          14819501000: OUT_EVT[139] DUT_Q79=411 (0x19b) EXP_Q79[138]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#          14900000000: IN[141] = 26509 (0x678d)
+#          14919501000: OUT_EVT[140] DUT_Q79=326 (0x146) EXP_Q79[139]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#          15000000000: IN[142] = 19260 (0x4b3c)
+#          15019501000: OUT_EVT[141] DUT_Q79=209 (0xd1) EXP_Q79[140]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          15100000000: IN[143] = 10126 (0x278e)
+#          15119501000: OUT_EVT[142] DUT_Q79=72 (0x48) EXP_Q79[141]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#          15200000000: IN[144] = 31163 (0x79bb)
+#          15219501000: OUT_EVT[143] DUT_Q79=-72 (0xffb8) EXP_Q79[142]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#          15300000000: IN[145] = 32767 (0x7fff)
+#          15319501000: OUT_EVT[144] DUT_Q79=-210 (0xff2e) EXP_Q79[143]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          15400000000: IN[146] = 31163 (0x79bb)
+#          15419501000: OUT_EVT[145] DUT_Q79=-326 (0xfeba) EXP_Q79[144]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#          15500000000: IN[147] = 10126 (0x278e)
+#          15519501000: OUT_EVT[146] DUT_Q79=-411 (0xfe65) EXP_Q79[145]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#          15600000000: IN[148] = 19260 (0x4b3c)
+#          15619501000: OUT_EVT[147] DUT_Q79=-456 (0xfe38) EXP_Q79[146]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          15700000000: IN[149] = 26509 (0x678d)
+#          15719501000: OUT_EVT[148] DUT_Q79=-456 (0xfe38) EXP_Q79[147]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          15800000000: IN[150] = 0 (0x0)
+#          15819501000: OUT_EVT[149] DUT_Q79=-412 (0xfe64) EXP_Q79[148]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#          15900000000: IN[151] = -26509 (0x9873)
+#          15919501000: OUT_EVT[150] DUT_Q79=-327 (0xfeb9) EXP_Q79[149]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          16000000000: IN[152] = -19260 (0xb4c4)
+#          16019501000: OUT_EVT[151] DUT_Q79=-210 (0xff2e) EXP_Q79[150]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          16100000000: IN[153] = -10126 (0xd872)
+#          16119501000: OUT_EVT[152] DUT_Q79=-73 (0xffb7) EXP_Q79[151]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          16200000000: IN[154] = -31163 (0x8645)
+#          16219501000: OUT_EVT[153] DUT_Q79=71 (0x47) EXP_Q79[152]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          16300000000: IN[155] = -32768 (0x8000)
+#          16319501000: OUT_EVT[154] DUT_Q79=209 (0xd1) EXP_Q79[153]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          16400000000: IN[156] = -31163 (0x8645)
+#          16419501000: OUT_EVT[155] DUT_Q79=325 (0x145) EXP_Q79[154]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#          16500000000: IN[157] = -10126 (0xd872)
+#          16519501000: OUT_EVT[156] DUT_Q79=410 (0x19a) EXP_Q79[155]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#          16600000000: IN[158] = -19260 (0xb4c4)
+#          16619501000: OUT_EVT[157] DUT_Q79=455 (0x1c7) EXP_Q79[156]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          16700000000: IN[159] = -26509 (0x9873)
+#          16719501000: OUT_EVT[158] DUT_Q79=455 (0x1c7) EXP_Q79[157]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          16800000000: IN[160] = 0 (0x0)
+#          16819501000: OUT_EVT[159] DUT_Q79=411 (0x19b) EXP_Q79[158]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#          16900000000: IN[161] = 26509 (0x678d)
+#          16919501000: OUT_EVT[160] DUT_Q79=326 (0x146) EXP_Q79[159]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#          17000000000: IN[162] = 19260 (0x4b3c)
+#          17019501000: OUT_EVT[161] DUT_Q79=209 (0xd1) EXP_Q79[160]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          17100000000: IN[163] = 10126 (0x278e)
+#          17119501000: OUT_EVT[162] DUT_Q79=72 (0x48) EXP_Q79[161]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#          17200000000: IN[164] = 31163 (0x79bb)
+#          17219501000: OUT_EVT[163] DUT_Q79=-72 (0xffb8) EXP_Q79[162]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#          17300000000: IN[165] = 32767 (0x7fff)
+#          17319501000: OUT_EVT[164] DUT_Q79=-210 (0xff2e) EXP_Q79[163]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          17400000000: IN[166] = 31163 (0x79bb)
+#          17419501000: OUT_EVT[165] DUT_Q79=-326 (0xfeba) EXP_Q79[164]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#          17500000000: IN[167] = 10126 (0x278e)
+#          17519501000: OUT_EVT[166] DUT_Q79=-411 (0xfe65) EXP_Q79[165]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#          17600000000: IN[168] = 19260 (0x4b3c)
+#          17619501000: OUT_EVT[167] DUT_Q79=-456 (0xfe38) EXP_Q79[166]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          17700000000: IN[169] = 26509 (0x678d)
+#          17719501000: OUT_EVT[168] DUT_Q79=-456 (0xfe38) EXP_Q79[167]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          17800000000: IN[170] = 0 (0x0)
+#          17819501000: OUT_EVT[169] DUT_Q79=-412 (0xfe64) EXP_Q79[168]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#          17900000000: IN[171] = -26509 (0x9873)
+#          17919501000: OUT_EVT[170] DUT_Q79=-327 (0xfeb9) EXP_Q79[169]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          18000000000: IN[172] = -19260 (0xb4c4)
+#          18019501000: OUT_EVT[171] DUT_Q79=-210 (0xff2e) EXP_Q79[170]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          18100000000: IN[173] = -10126 (0xd872)
+#          18119501000: OUT_EVT[172] DUT_Q79=-73 (0xffb7) EXP_Q79[171]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          18200000000: IN[174] = -31163 (0x8645)
+#          18219501000: OUT_EVT[173] DUT_Q79=71 (0x47) EXP_Q79[172]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          18300000000: IN[175] = -32768 (0x8000)
+#          18319501000: OUT_EVT[174] DUT_Q79=209 (0xd1) EXP_Q79[173]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          18400000000: IN[176] = -31163 (0x8645)
+#          18419501000: OUT_EVT[175] DUT_Q79=325 (0x145) EXP_Q79[174]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#          18500000000: IN[177] = -10126 (0xd872)
+#          18519501000: OUT_EVT[176] DUT_Q79=410 (0x19a) EXP_Q79[175]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#          18600000000: IN[178] = -19260 (0xb4c4)
+#          18619501000: OUT_EVT[177] DUT_Q79=455 (0x1c7) EXP_Q79[176]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          18700000000: IN[179] = -26509 (0x9873)
+#          18719501000: OUT_EVT[178] DUT_Q79=455 (0x1c7) EXP_Q79[177]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          18800000000: IN[180] = 0 (0x0)
+#          18819501000: OUT_EVT[179] DUT_Q79=411 (0x19b) EXP_Q79[178]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#          18900000000: IN[181] = 26509 (0x678d)
+#          18919501000: OUT_EVT[180] DUT_Q79=326 (0x146) EXP_Q79[179]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#          19000000000: IN[182] = 19260 (0x4b3c)
+#          19019501000: OUT_EVT[181] DUT_Q79=209 (0xd1) EXP_Q79[180]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          19100000000: IN[183] = 10126 (0x278e)
+#          19119501000: OUT_EVT[182] DUT_Q79=72 (0x48) EXP_Q79[181]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#          19200000000: IN[184] = 31163 (0x79bb)
+#          19219501000: OUT_EVT[183] DUT_Q79=-72 (0xffb8) EXP_Q79[182]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#          19300000000: IN[185] = 32767 (0x7fff)
+#          19319501000: OUT_EVT[184] DUT_Q79=-210 (0xff2e) EXP_Q79[183]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          19400000000: IN[186] = 31163 (0x79bb)
+#          19419501000: OUT_EVT[185] DUT_Q79=-326 (0xfeba) EXP_Q79[184]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#          19500000000: IN[187] = 10126 (0x278e)
+#          19519501000: OUT_EVT[186] DUT_Q79=-411 (0xfe65) EXP_Q79[185]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#          19600000000: IN[188] = 19260 (0x4b3c)
+#          19619501000: OUT_EVT[187] DUT_Q79=-456 (0xfe38) EXP_Q79[186]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          19700000000: IN[189] = 26509 (0x678d)
+#          19719501000: OUT_EVT[188] DUT_Q79=-456 (0xfe38) EXP_Q79[187]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          19800000000: IN[190] = 0 (0x0)
+#          19819501000: OUT_EVT[189] DUT_Q79=-412 (0xfe64) EXP_Q79[188]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#          19900000000: IN[191] = -26509 (0x9873)
+#          19919501000: OUT_EVT[190] DUT_Q79=-327 (0xfeb9) EXP_Q79[189]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          20000000000: IN[192] = -19260 (0xb4c4)
+#          20019501000: OUT_EVT[191] DUT_Q79=-210 (0xff2e) EXP_Q79[190]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          20100000000: IN[193] = -10126 (0xd872)
+#          20119501000: OUT_EVT[192] DUT_Q79=-73 (0xffb7) EXP_Q79[191]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          20200000000: IN[194] = -31163 (0x8645)
+#          20219501000: OUT_EVT[193] DUT_Q79=71 (0x47) EXP_Q79[192]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          20300000000: IN[195] = -32768 (0x8000)
+#          20319501000: OUT_EVT[194] DUT_Q79=209 (0xd1) EXP_Q79[193]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          20400000000: IN[196] = -31163 (0x8645)
+#          20419501000: OUT_EVT[195] DUT_Q79=325 (0x145) EXP_Q79[194]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#          20500000000: IN[197] = -10126 (0xd872)
+#          20519501000: OUT_EVT[196] DUT_Q79=410 (0x19a) EXP_Q79[195]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#          20600000000: IN[198] = -19260 (0xb4c4)
+#          20619501000: OUT_EVT[197] DUT_Q79=455 (0x1c7) EXP_Q79[196]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          20700000000: IN[199] = -26509 (0x9873)
+#          20719501000: OUT_EVT[198] DUT_Q79=455 (0x1c7) EXP_Q79[197]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          20800000000: IN[200] = 0 (0x0)
+#          20819501000: OUT_EVT[199] DUT_Q79=411 (0x19b) EXP_Q79[198]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#          20900000000: IN[201] = 26509 (0x678d)
+#          20919501000: OUT_EVT[200] DUT_Q79=326 (0x146) EXP_Q79[199]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#          21000000000: IN[202] = 19260 (0x4b3c)
+#          21019501000: OUT_EVT[201] DUT_Q79=209 (0xd1) EXP_Q79[200]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          21100000000: IN[203] = 10126 (0x278e)
+#          21119501000: OUT_EVT[202] DUT_Q79=72 (0x48) EXP_Q79[201]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#          21200000000: IN[204] = 31163 (0x79bb)
+#          21219501000: OUT_EVT[203] DUT_Q79=-72 (0xffb8) EXP_Q79[202]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#          21300000000: IN[205] = 32767 (0x7fff)
+#          21319501000: OUT_EVT[204] DUT_Q79=-210 (0xff2e) EXP_Q79[203]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          21400000000: IN[206] = 31163 (0x79bb)
+#          21419501000: OUT_EVT[205] DUT_Q79=-326 (0xfeba) EXP_Q79[204]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#          21500000000: IN[207] = 10126 (0x278e)
+#          21519501000: OUT_EVT[206] DUT_Q79=-411 (0xfe65) EXP_Q79[205]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#          21600000000: IN[208] = 19260 (0x4b3c)
+#          21619501000: OUT_EVT[207] DUT_Q79=-456 (0xfe38) EXP_Q79[206]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          21700000000: IN[209] = 26509 (0x678d)
+#          21719501000: OUT_EVT[208] DUT_Q79=-456 (0xfe38) EXP_Q79[207]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          21800000000: IN[210] = 0 (0x0)
+#          21819501000: OUT_EVT[209] DUT_Q79=-412 (0xfe64) EXP_Q79[208]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#          21900000000: IN[211] = -26509 (0x9873)
+#          21919501000: OUT_EVT[210] DUT_Q79=-327 (0xfeb9) EXP_Q79[209]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          22000000000: IN[212] = -19260 (0xb4c4)
+#          22019501000: OUT_EVT[211] DUT_Q79=-210 (0xff2e) EXP_Q79[210]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          22100000000: IN[213] = -10126 (0xd872)
+#          22119501000: OUT_EVT[212] DUT_Q79=-73 (0xffb7) EXP_Q79[211]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          22200000000: IN[214] = -31163 (0x8645)
+#          22219501000: OUT_EVT[213] DUT_Q79=71 (0x47) EXP_Q79[212]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          22300000000: IN[215] = -32768 (0x8000)
+#          22319501000: OUT_EVT[214] DUT_Q79=209 (0xd1) EXP_Q79[213]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          22400000000: IN[216] = -31163 (0x8645)
+#          22419501000: OUT_EVT[215] DUT_Q79=325 (0x145) EXP_Q79[214]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#          22500000000: IN[217] = -10126 (0xd872)
+#          22519501000: OUT_EVT[216] DUT_Q79=410 (0x19a) EXP_Q79[215]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#          22600000000: IN[218] = -19260 (0xb4c4)
+#          22619501000: OUT_EVT[217] DUT_Q79=455 (0x1c7) EXP_Q79[216]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          22700000000: IN[219] = -26509 (0x9873)
+#          22719501000: OUT_EVT[218] DUT_Q79=455 (0x1c7) EXP_Q79[217]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          22800000000: IN[220] = 0 (0x0)
+#          22819501000: OUT_EVT[219] DUT_Q79=411 (0x19b) EXP_Q79[218]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#          22900000000: IN[221] = 26509 (0x678d)
+#          22919501000: OUT_EVT[220] DUT_Q79=326 (0x146) EXP_Q79[219]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#          23000000000: IN[222] = 19260 (0x4b3c)
+#          23019501000: OUT_EVT[221] DUT_Q79=209 (0xd1) EXP_Q79[220]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          23100000000: IN[223] = 10126 (0x278e)
+#          23119501000: OUT_EVT[222] DUT_Q79=72 (0x48) EXP_Q79[221]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#          23200000000: IN[224] = 31163 (0x79bb)
+#          23219501000: OUT_EVT[223] DUT_Q79=-72 (0xffb8) EXP_Q79[222]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#          23300000000: IN[225] = 32767 (0x7fff)
+#          23319501000: OUT_EVT[224] DUT_Q79=-210 (0xff2e) EXP_Q79[223]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          23400000000: IN[226] = 31163 (0x79bb)
+#          23419501000: OUT_EVT[225] DUT_Q79=-326 (0xfeba) EXP_Q79[224]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#          23500000000: IN[227] = 10126 (0x278e)
+#          23519501000: OUT_EVT[226] DUT_Q79=-411 (0xfe65) EXP_Q79[225]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#          23600000000: IN[228] = 19260 (0x4b3c)
+#          23619501000: OUT_EVT[227] DUT_Q79=-456 (0xfe38) EXP_Q79[226]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          23700000000: IN[229] = 26509 (0x678d)
+#          23719501000: OUT_EVT[228] DUT_Q79=-456 (0xfe38) EXP_Q79[227]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          23800000000: IN[230] = 0 (0x0)
+#          23819501000: OUT_EVT[229] DUT_Q79=-412 (0xfe64) EXP_Q79[228]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#          23900000000: IN[231] = -26509 (0x9873)
+#          23919501000: OUT_EVT[230] DUT_Q79=-327 (0xfeb9) EXP_Q79[229]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          24000000000: IN[232] = -19260 (0xb4c4)
+#          24019501000: OUT_EVT[231] DUT_Q79=-210 (0xff2e) EXP_Q79[230]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          24100000000: IN[233] = -10126 (0xd872)
+#          24119501000: OUT_EVT[232] DUT_Q79=-73 (0xffb7) EXP_Q79[231]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          24200000000: IN[234] = -31163 (0x8645)
+#          24219501000: OUT_EVT[233] DUT_Q79=71 (0x47) EXP_Q79[232]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          24300000000: IN[235] = -32768 (0x8000)
+#          24319501000: OUT_EVT[234] DUT_Q79=209 (0xd1) EXP_Q79[233]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          24400000000: IN[236] = -31163 (0x8645)
+#          24419501000: OUT_EVT[235] DUT_Q79=325 (0x145) EXP_Q79[234]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+#          24500000000: IN[237] = -10126 (0xd872)
+#          24519501000: OUT_EVT[236] DUT_Q79=410 (0x19a) EXP_Q79[235]=411 (0x19b)  **MISMATCH**  |  DUT_REAL=0.80078125  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.091098845  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=410}
+#          24600000000: IN[238] = -19260 (0xb4c4)
+#          24619501000: OUT_EVT[237] DUT_Q79=455 (0x1c7) EXP_Q79[236]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          24700000000: IN[239] = -26509 (0x9873)
+#          24719501000: OUT_EVT[238] DUT_Q79=455 (0x1c7) EXP_Q79[237]=455 (0x1c7)          [OK]  |  DUT_REAL=0.888671875  GOLD_F32HEX=0x3f7d1e89 GOLD_F32=0.98874718 diff=0.100075305  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=455}
+#          24800000000: IN[240] = 0 (0x0)
+#          24819501000: OUT_EVT[239] DUT_Q79=411 (0x19b) EXP_Q79[238]=411 (0x19b)          [OK]  |  DUT_REAL=0.802734375  GOLD_F32HEX=0x3f645241 GOLD_F32=0.891880095 diff=0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=411}
+#          24900000000: IN[241] = 26509 (0x678d)
+#          24919501000: OUT_EVT[240] DUT_Q79=326 (0x146) EXP_Q79[239]=326 (0x146)          [OK]  |  DUT_REAL=0.63671875  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=326}
+#          25000000000: IN[242] = 19260 (0x4b3c)
+#          25019501000: OUT_EVT[241] DUT_Q79=209 (0xd1) EXP_Q79[240]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          25100000000: IN[243] = 10126 (0x278e)
+#          25119501000: OUT_EVT[242] DUT_Q79=72 (0x48) EXP_Q79[241]=72 (0x48)          [OK]  |  DUT_REAL=0.140625  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=72}
+#          25200000000: IN[244] = 31163 (0x79bb)
+#          25219501000: OUT_EVT[243] DUT_Q79=-72 (0xffb8) EXP_Q79[242]=-73 (0xffb7)  **MISMATCH**  |  DUT_REAL=-0.140625  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0160132945  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-72}
+#          25300000000: IN[245] = 32767 (0x7fff)
+#          25319501000: OUT_EVT[244] DUT_Q79=-210 (0xff2e) EXP_Q79[243]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          25400000000: IN[246] = 31163 (0x79bb)
+#          25419501000: OUT_EVT[245] DUT_Q79=-326 (0xfeba) EXP_Q79[244]=-327 (0xfeb9)  **MISMATCH**  |  DUT_REAL=-0.63671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0710724592  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-326}
+#          25500000000: IN[247] = 10126 (0x278e)
+#          25519501000: OUT_EVT[246] DUT_Q79=-411 (0xfe65) EXP_Q79[245]=-412 (0xfe64)  **MISMATCH**  |  DUT_REAL=-0.802734375  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.08914572  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-411}
+#          25600000000: IN[248] = 19260 (0x4b3c)
+#          25619501000: OUT_EVT[247] DUT_Q79=-456 (0xfe38) EXP_Q79[246]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          25700000000: IN[249] = 26509 (0x678d)
+#          25719501000: OUT_EVT[248] DUT_Q79=-456 (0xfe38) EXP_Q79[247]=-456 (0xfe38)          [OK]  |  DUT_REAL=-0.890625  GOLD_F32HEX=0xbf7d1e89 GOLD_F32=-0.98874718 diff=-0.0981221795  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-456}
+#          25800000000: IN[250] = 0 (0x0)
+#          25819501000: OUT_EVT[249] DUT_Q79=-412 (0xfe64) EXP_Q79[248]=-412 (0xfe64)          [OK]  |  DUT_REAL=-0.8046875  GOLD_F32HEX=0xbf645241 GOLD_F32=-0.891880095 diff=-0.087192595  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-412}
+#          25900000000: IN[251] = -26509 (0x9873)
+#          25919501000: OUT_EVT[250] DUT_Q79=-327 (0xfeb9) EXP_Q79[249]=-327 (0xfeb9)          [OK]  |  DUT_REAL=-0.638671875  GOLD_F32HEX=0xbf3531ce GOLD_F32=-0.707791209 diff=-0.0691193342  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-327}
+#          26000000000: IN[252] = -19260 (0xb4c4)
+#          26019501000: OUT_EVT[251] DUT_Q79=-210 (0xff2e) EXP_Q79[250]=-210 (0xff2e)          [OK]  |  DUT_REAL=-0.41015625  GOLD_F32HEX=0xbee8b447 GOLD_F32=-0.454500407 diff=-0.044344157  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-210}
+#          26100000000: IN[253] = -10126 (0xd872)
+#          26119501000: OUT_EVT[252] DUT_Q79=-73 (0xffb7) EXP_Q79[251]=-73 (0xffb7)          [OK]  |  DUT_REAL=-0.142578125  GOLD_F32HEX=0xbe2065ca GOLD_F32=-0.156638294 diff=-0.0140601695  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=-73}
+#          26200000000: IN[254] = -31163 (0x8645)
+#          26219501000: OUT_EVT[253] DUT_Q79=71 (0x47) EXP_Q79[252]=72 (0x48)  **MISMATCH**  |  DUT_REAL=0.138671875  GOLD_F32HEX=0x3e2065ca GOLD_F32=0.156638294 diff=0.0179664195  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=71}
+#          26300000000: IN[255] = -32768 (0x8000)
+#          26319501000: OUT_EVT[254] DUT_Q79=209 (0xd1) EXP_Q79[253]=209 (0xd1)          [OK]  |  DUT_REAL=0.408203125  GOLD_F32HEX=0x3ee8b447 GOLD_F32=0.454500407 diff=0.046297282  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=209}
+#          26419501000: OUT_EVT[255] DUT_Q79=325 (0x145) EXP_Q79[254]=326 (0x146)  **MISMATCH**  |  DUT_REAL=0.634765625  GOLD_F32HEX=0x3f3531ce GOLD_F32=0.707791209 diff=0.0730255842  {state=1, q=0, empty=1, full=0, rd_en=0, load_sample=0, counter_clear=0, done_flag=1, acc_shifted=325}
+# ==================================================
+# FIR verification finished.
+# Matches         : 187
+# Mismatches      : 68
+# Avg NRMSE   (RMSE/(ymax-ymin))        : 0.033273
+# Worst NRMSE (max|e|/(ymax-ymin))      : 0.052138
+# Expected float range used for norm    : [-0.997950315, 0.98874718] (range=1.98669749)
+# Worst error sample idx                : 37
+#   DUT_REAL=0.865234375  GOLD_F32=0.968817353  |e|=0.103582978
+# ==================================================
+# ** Note: $finish    : test_fir_core.v(222)
+#    Time: 31420500 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Task print_summary_and_finish at test_fir_core.v line 222
+# End time: 23:04:45 on Dec 17,2025, Elapsed time: 0:14:54
+# Errors: 0, Warnings: 1

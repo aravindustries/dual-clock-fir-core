@@ -1,0 +1,211 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/user/stud/fall25/as7821/final/FIR_CORE/qsim_rtl/fir_core
+valu
+Z1 2../../rtl/fir_core/fir_core.v
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1766029788
+!i10b 1
+!s100 SHoL`Uh[R]ie[6hA3GVzW1
+IlTI4kfkRAzHlzC8CX[jTB1
+S1
+R0
+Z4 w1766008438
+Z5 8../../rtl/fir_core/fir_core.v
+Z6 F../../rtl/fir_core/fir_core.v
+!i122 0
+L0 7 59
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OP;L;2024.2;79
+r1
+!s85 0
+31
+Z9 !s108 1766029786.000000
+Z10 !s107 ../../rtl/fir_core/fir_core.v|
+Z11 !s90 -reportprogress|300|-sv|+acc|-suppress|12110|-incr|../../rtl/fir_core/fir_core.v|
+!i113 1
+Z12 o-suppress 12110 -sv +acc
+Z13 tCvgOpt 0
+vcmem
+R1
+R2
+R3
+!i10b 1
+!s100 _@ZRTjEZX=n=F`NB5Rl]F0
+IilSDTE1VROdNZ4YTmXl9M0
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 92 26
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vcounter
+R1
+R2
+R3
+!i10b 1
+!s100 _o7WVWYPh67X8KOQAK0eI1
+I^IPQeWJHY^Fo9j^>YhSkQ3
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 70 18
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfifo
+R1
+R2
+R3
+!i10b 1
+!s100 Lc[C3W0YO@T6i8RDoW>lm0
+IFeH78AA@akd>n=SabnWj92
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 158 130
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfir_core
+R1
+R2
+R3
+!i10b 1
+!s100 ]e@Df[9cV>5DdH`Z[`gQO3
+IZk5SeQ`9z?o?3S;2WWYVW2
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 399 129
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfir_fsm
+R1
+R2
+R3
+!i10b 1
+!s100 _9hW1o@Xf]No8V6mmjj6g0
+I5Z?V?@m3DF];hhVBom2ca0
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 292 103
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vimem
+R1
+R2
+R3
+!i10b 1
+!s100 gSQj?7BXhdB:59emfEU800
+IThgkF<TiN:2lf?LV?EO0K3
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 124 28
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vtestbench
+2test_fir_core.v
+R2
+!s110 1766029791
+!i10b 1
+!s100 QV01HWMZ2Rne8e6m9F6b90
+IM=<2M6CjS@b3VJkH0[k2W3
+S1
+R0
+w1766029713
+8test_fir_core.v
+Ftest_fir_core.v
+!i122 1
+L0 8 292
+R7
+R8
+r1
+!s85 0
+31
+!s108 1766029789.000000
+!s107 test_fir_core.v|
+!s90 -reportprogress|300|-sv|+acc|-suppress|12110|-incr|test_fir_core.v|
+!i113 1
+R12
+R13
