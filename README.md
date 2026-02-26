@@ -20,7 +20,7 @@ Figure 1 illustrates the FIR core top-level:
 - **ALU/MAC** multiplies one tap-sample pair per `clk2` cycle and accumulates across 64 taps.
 - **FSM + counter** schedules load/shift/MAC and asserts `valid_out` for each computed output sample.
 
-**Figure 1: Top-level FIR core architecture (placeholder).**  
+**Figure 1: Top-level FIR core architecture**  
 ![Top-level FIR core architecture](block_diagram.jpg)
 
 ### 1.2 Fixed-point formats
@@ -112,9 +112,7 @@ h_q15_real = double(h_q15) / (2^15);
 y_gold_q15stim_f32 = single(filter(h_q15_real, 1, x_q15_real));
 ```
 
-### 3.4 Placeholders for plots
-
-(a) Filter magnitude response (b) Input/output spectra
+### 3.4 MATLAB plots
 
 **Figure 2: MATLAB analysis plots**
 
