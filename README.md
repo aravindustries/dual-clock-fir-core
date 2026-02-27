@@ -1,8 +1,7 @@
 # FIR Core: Design, Verification, and Post-Synthesis Analysis
 
 Design and verification of a dual-clock finite impulse response (FIR)
-filter core that accepts Q1.15 input samples, applies a 64-tap low-pass filter with Q1.15 coeffi-
-cients, and produces saturated Q7.9 outputs. The design uses a dual-clock FIFO to bridge an
+filter core that accepts Q1.15 input samples, applies a 64-tap low-pass filter with Q1.15 coefficients, and produces saturated Q7.9 outputs. The design uses a dual-clock FIFO to bridge an
 input sampling clock (`clk1`) and a higher-rate compute clock (`clk2`). Verification is performed
 using MATLAB-generated golden outputs and accuracy is summarized using normalized root
 mean squared error (NRMSE). Post-synthesis timing, area, and power are characterized using
