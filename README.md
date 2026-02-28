@@ -266,7 +266,7 @@ max_err_idx = compare_idx;
 end
 ```
 
-### 5.2 Waveforms
+### 5.2 Waveforms and Results
 
 **Figure 4: Loading of CMEM while cload=1**
 
@@ -285,6 +285,8 @@ end
 <p align="center">
   <img src="empty.png" width="800">
 </p>
+
+Accuracy results:
 
 ```systemverilog
 # Matches         : 187
