@@ -20,7 +20,10 @@ Figure 1 illustrates the FIR core top-level:
 - **FSM + counter** schedules load/shift/MAC and asserts `valid_out` for each computed output sample.
 
 **Figure 1: Top-level FIR core architecture**  
-![Top-level FIR core architecture](block_diagram.jpg)
+
+<p align="center">
+  <img src="block_diagram.jpg" width="800">
+</p>
 
 ### 1.2 Fixed-point formats
 
@@ -53,11 +56,9 @@ Table 1 summarizes performance, clocking, energy, area, and accuracy.
 
 Using PrimeTime-reported total power **P** and a steady-state sample rate **R**:
 
-\[
-E_{sample} = \frac{P}{R}
-\]
+$E_{sample} = \frac{P}{R}$
 
-At R = 10 kS/s and P = 37.4 µW, Esample ≈ 3740 pJ/sample.
+At R = 10 kS/s and P = 37.4 µW, $E_{sample}$ ≈ 3740 pJ/sample.
 
 ## 3 MATLAB Vector Generation and Golden Outputs
 
@@ -209,7 +210,10 @@ The FSM sequences computation per output sample.
 * **DONE**: assert valid out for one clk2 cycle and latch output
 
 **Figure 3: FSM diagram**
-![FSM diagram](state_diagram.jpg)
+
+<p align="center">
+  <img src="state_diagram.jpg" width="400">
+</p>
 
 ### 4.7 `fir_core`: Top-level integration
 
@@ -233,21 +237,21 @@ The testbench:
 
 ### 5.1 NRMSE definition used
 
-Let y[n] be golden and ˆy[n] be DUT output in float:
+Let $y[n]$ be golden and $\hat{y}[n]$ be DUT output in float:
 
-[
+$$
 RMSE = \sqrt{\frac{1}{N}\sum_{n=0}^{N-1}(y[n]-\hat{y}[n])^2}
-]
+$$
 
-[
+$$
 NRMSE = \frac{RMSE}{y_{max}-y_{min}}
-]
+$$
 
 Worst-case NRMSE is computed as:
 
-[
+$$
 NRMSE_{worst} = \frac{\max_n |y[n]-\hat{y}[n]|}{y_{max}-y_{min}}
-]
+$$
 
 ```systemverilog
 ygold_sr = $bitstoshortreal(ygold_u32mem[compare_idx]);
@@ -265,13 +269,22 @@ end
 ### 5.2 Waveforms
 
 **Figure 4: Loading of CMEM while cload=1**
-![Loading of CMEM while cload=1](coeff_load.png)
+
+<p align="center">
+  <img src="coeff_load.png" width="800">
+</p>
 
 **Figure 5: valid out spikes at each clk1 cycle demonstrate 10KS/s throughput**
-![valid out spikes at each clk1 cycle demonstrate 10KS/s throughput](throughput.png)
+
+<p align="center">
+  <img src="throughput.png" width="800">
+</p>
 
 **Figure 6: state changes when fifo is NOT empty**
-![state changes when fifo is NOT empty](empty.png)
+
+<p align="center">
+  <img src="empty.png" width="800">
+</p>
 
 ```systemverilog
 # Matches         : 187
@@ -293,10 +306,10 @@ A representative max path in the clk2 group shows a data arrival of approximatel
 (with very large positive slack under a 1 µs clock constraint). Using the reported path delay as a proxy
 for critical delay, an approximate fmax can be estimated as:
 
-[
+$$
 T_{min} \approx 24.255\text{ ns} + 0.464\text{ ns} \approx 24.72\text{ ns}
 \Rightarrow f_{max} \approx 40.5\text{ MHz}
-]
+$$
 
 ```text
 Startpoint: u_counter_q_reg_0_ (clocked by clk2)
@@ -309,12 +322,11 @@ slack (MET)           975.2812
 
 ### 6.2 Area
 
-PrimeTime reports a total area of 137214.17 (library area units). Assuming these units are µm2,
-the total area in mm2 is:
+PrimeTime reports a total area of 137214.17 µm2
 
-[
-A_{mm^2} \approx 137214.17 \times 10^{-6} = 0.13721417\text{ mm}^2
-]
+The total area in mm2 is:
+
+$$0.13721417\text{ mm}^2$$
 
 ```text
 Total 42 references                                   137214.17
@@ -324,7 +336,7 @@ Total 42 references                                   137214.17
 
 PrimeTime time-based power (at the modeled activity) reports:
 
-* Total power: 3.74 × 10−5 W (37.4 µW)
+* Total power: 37.4 µW
 * Clock network dominates power (reported ∼ 89.6%)
 
 ```text
